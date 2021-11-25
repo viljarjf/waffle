@@ -16,7 +16,7 @@ then the point is represented with an x. Otherwise, it represented with a space.
 
 A basic os-check is performed, to figure out is `clear` or `cls` will clear the console.
 
-pi = 3.1516
+pi = 3.1416
 
 To rotate the waffle, the x-coordinates is multiplied by cos(time). This is equivalent to a projection of a rotating waffle onto the screen plane.
 Programatically, it should be fairly easy to implement arbitrary rotation, by doing the linear algebra to properly project the curve, 
