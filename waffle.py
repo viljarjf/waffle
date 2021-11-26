@@ -10,7 +10,7 @@ lambda t: sum([(t)**(2*n) *(-1)**n / f(2*n) for n in range(
   /(sin(t) +1.4));xg=lambda t:r(t)*cos(t);yg=lambda t:r(t
    )*sin(t);d =lambda x,y,x0,y0,t:((x(t)-x0)**2+(y(t)-y0
     )**2)**0.5;pl= lambda x,y,y0,t:"".join([" " if d0 >
-     0.1 else "x"for d0 in [min([d(x,y,x0,y0,t0)for t0
+     0.17 else "x"for d0 in[min([d(x,y,x0,y0,t0)for t0
       in t]) for x0 in xr]]);t=(lambda n:[-3.1416 + i
        *(3.1416 - -3.1416)/n for i in range(n+1)])(69
        );ys = [yg(t0) for t0 in t]; from os import \
