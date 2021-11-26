@@ -13,24 +13,26 @@ lambda t: sum([(t)**(2*n) *(-1)**n / f(2*n) for n in range(
      0.17 else "x"for d0 in[min([d(x,y,x0,y0,t0)for t0
       in t]) for x0 in xr]]);t=(lambda n:[-3.1416 + i
        *(3.1416 - -3.1416)/n for i in range(n+1)])(69
-       );ys = [yg(t0) for t0 in t]; from os import \
+       ); ys = [yg(t0) for t0 in t]; from os import\
         system as s;c = "cls" if not s("cls") else\
-         "clear";[(lambda xs, cf, sf:(lambda x, y:
-          print("\n".join(([pl(lambda t0:cf*(x(t0
-           )*cf - y(t0)*sf), lambda t0:(x(t0)*sf
-            +y(t0)*cf),y0,t)for y0 in reversed(
-             yr)]+[s(c)])[:-1])))(lambda t0: \
-              xs[t.index(t0)],lambda t0:1.7+\
-               ys[t.index(t0)]))([xg(t0)for\
-                t0 in t],cos(fr),sin(fr)) \
-                 for fr in [(0.3*i)%6.2832 
-                  for i in range(1000)]]
-                   # the code took too 
-                    # little space to
-                     #completely fill
-                      # the wedge of
-                       # the waffle
-                        # so I had
-                         # to add
-                          # this
-                           # :)
+         "clear";[[(lambda xs, cf, sf:(lambda x, y
+          :print("\n" .join(([pl(lambda t0:cf*(x(
+            t0 )*cf - y(t0)*sf), lambda t0:(x(t0
+             )*sf + y(t0) * cf),y0,t) for y0 in
+             reversed(yr) ] + [s(c)])[:-1])))(
+              lambda t0 : xs[ t.index( t0) ],
+               lambda t0:1.7+ys[t.index(t0)]
+                )) ([xg(t0)for t0 in t],cos
+                 (fr) , sin(fr)) for fr in
+                   [( 0.3*i ) % 6.2832 for
+                    i in range(63)]] for
+                     wafflelove in iter
+                      ( int , 42069 )]
+                       # the wedge of
+                        # the waffle
+                         # so I had
+                          # to add
+                           # this
+                            # :)
+                             ##
+                              

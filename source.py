@@ -56,7 +56,7 @@ c = "cls" if not s("cls") else "clear"
 
 # loop to draw the heart
 # input: generated x-values from the x-generator, cosine factor and sine factor
-[(lambda xs, cf, sf:(lambda x, y:
+[[(lambda xs, cf, sf:(lambda x, y:
 
 # call the line plot function and combine them.
 # the y-coordinates are reversed since drawing is top first.
@@ -68,4 +68,4 @@ print("\n".join(([pl(lambda t0: cf*(x(t0)*cf - y(t0)*sf), lambda t0: (x(t0)*sf +
 # call with calculated x- and y- values, reduces computation
 )(lambda t0: xs[t.index(t0)], lambda t0: 1.7 + ys[t.index(t0)])
 # fr is a stand-in for time passing. It ranges from 0 to 2pi on a loop.
-)([xg(t0) for t0 in t], cos(fr), sin(fr)) for fr in [(0.3*i)%6.2832 for i in range(1000)]]
+)([xg(t0) for t0 in t], cos(fr), sin(fr)) for fr in [(0.3*i)%6.2832 for i in range(63)]] for _ in iter(int, 1)]
